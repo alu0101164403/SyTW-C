@@ -1,0 +1,19 @@
+// EJ 5.- Crear el código Sass adecuado para obtener el CSS a continución:
+
+$a-link-color: #beedee;
+$a-hover-color: #cbbebb;
+$a-btn-bg: #deede6;
+
+a {
+  color: $a-link-color;
+  &:hover {
+    color: $a-hover-color;
+  }
+  
+  &.btn {
+    background: $a-btn-bg;
+    &.btn {
+      display: block;
+    }
+  }
+}

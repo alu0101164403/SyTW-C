@@ -1,0 +1,18 @@
+// EJ 7.- Crear el código Sass más estructurado posible que genere el código CSS:
+
+$border-radius-default: 5px;
+$border-radius-large: 10px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.header {
+  @include border-radius($border-radius-default);
+}
+
+.footer {
+  @include border-radius($border-radius-large);
+}

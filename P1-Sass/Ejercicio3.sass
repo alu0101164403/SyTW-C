@@ -1,0 +1,46 @@
+// EJ.- Escribir el código Sass más simplificado posible que genere:
+    
+    $header-bg-color: #531946;
+$header-hover-color: #095169;
+$footer-bg-color: #30162B;
+$footer-hover-color: #fff;
+$feature-hover-color: #531946;
+$content-bg-color: #fff;
+$content-text-color: #222;
+
+.header, .footer, .feature a, .content {
+  background-color: $footer-bg-color;
+  color: $footer-hover-color;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+.header {
+  background-color: $header-bg-color;
+  a {
+    color: #fff;
+    &:hover {
+      color: $header-hover-color;
+    }
+  }
+}
+
+.footer {
+  a {
+    color: $footer-hover-color;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.feature {
+  a:hover {
+    color: $feature-hover-color;
+  }
+}
+
+.content {
+  background-color: $content-bg-color;
+  color: $content-text-color;
+}
