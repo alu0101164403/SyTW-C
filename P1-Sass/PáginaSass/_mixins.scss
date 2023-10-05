@@ -1,0 +1,30 @@
+/*
+mixins para los encabezados, h2
+mixin para centrar contenido
+mixin para estilos del form
+*/
+
+/*
+Mixins: Permite definir y reutilizar bloques de estilos que se pueden incluir en múltiples lugares de la hoja de estilo, similar a funciones en la programación.
+*/
+
+@mixin header-styling {
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin form-styles {
+    input {
+        padding: 10px;
+        border: 1px solid $purple;
+        &:focus {
+        border-color: $focus-color;
+        }
+    }
+}

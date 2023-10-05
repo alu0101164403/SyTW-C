@@ -1,0 +1,43 @@
+/*
+Modularizar el códig SASS utilizando al menos los parciales:
+_variables.scss
+_mixins.scss: 
+_base.scss: Estilos comunes, aplicables a todas las páginas del sitio.
+mixins para los encabezados, h2
+mixin para centrar contenido
+mixin para estilos del form
+Definir un estilo para el contacto  y usar herencia para las Garantías
+Anidar los estilos de los elementos dentro del form, para que se resalten cuando tengan el foco.
+*/
+
+@import 'variables';
+@import 'mixins';
+@import 'base';
+
+/* Estilos para los contenedores y diseño propuesto */
+
+.logo-container {
+}
+
+.company-name-container {
+}
+
+.navigation-container {
+}
+
+.product-container {
+// 3x3 grid
+}
+
+.form-container {
+}
+
+.contact-container {
+}
+
+.testimonials-container {
+// 4 columnas
+}
+
+.garantias-container {
+}

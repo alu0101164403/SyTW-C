@@ -1,0 +1,30 @@
+/*
+Estilos comunes, aplicables a todas las páginas del sitio.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    @include header-styling;
+}
+
+.form-container {
+    @include center-content;
+}
+  
+.form-container form {
+    @include form-styles;
+}
+
+.contact-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+  
+.garantias-container {
+    @extend .contact-container;
+    font-weight: bold;
+}
