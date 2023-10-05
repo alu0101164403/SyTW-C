@@ -1,0 +1,51 @@
+/*
+Estilos comunes, aplicables a todas las páginas del sitio.
+*/
+
+header {
+    @include row-content;
+    @include center-content;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+h2 {
+    @include header-styling;
+}
+
+.navigation-container {
+    @include row-content;
+    @include center-content;
+}
+
+.form-container {
+    @include center-content;
+    form {
+        @include form-styles;
+    }
+}
+
+.contact-container {
+    @include center-content;
+    background-color: $blue;
+    padding: 20px;
+}
+
+.testimonials-container {
+    @include row-content;
+    @include center-content;
+}
+
+.garantias-container {
+    @extend .contact-container;
+    font-weight: bold;
+}
+
+.info-container {
+    @include row-content;
+    @include center-content;
+}

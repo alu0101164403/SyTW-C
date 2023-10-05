@@ -17,27 +17,51 @@ Anidar los estilos de los elementos dentro del form, para que se resalten cuando
 /* Estilos para los contenedores y diseño propuesto */
 
 .logo-container {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    img {
+        height: 100px;
+        width: 150px;
+    }
 }
 
 .company-name-container {
+    align-items: center;
+    padding: 10px;
+    p {
+        font-weight: bold;
+    }
 }
 
 .navigation-container {
+    align-items: center;
+    padding: 10px;
+    p {
+        text-align: center;
+        padding: 10px;
+    }
 }
 
 .product-container {
 // 3x3 grid
+    padding: 10px;
+    margin-right: 20px;
 }
 
 .form-container {
+    margin-left: 20px;
+    padding: 10px;
 }
 
 .contact-container {
+    width: auto;
+    height: 20px;
 }
 
 .testimonials-container {
-// 4 columnas
-}
-
-.garantias-container {
+    p {
+        text-align: center;
+        padding: 10px;
+    }
 }

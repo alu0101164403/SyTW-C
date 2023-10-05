@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/*
+Modularizar el códig SASS utilizando al menos los parciales:
+_variables.scss
+_mixins.scss: 
+_base.scss: Estilos comunes, aplicables a todas las páginas del sitio.
+mixins para los encabezados, h2
+mixin para centrar contenido
+mixin para estilos del form
+Definir un estilo para el contacto  y usar herencia para las Garantías
+Anidar los estilos de los elementos dentro del form, para que se resalten cuando tengan el foco.
+*/
+/*
+mixins para los encabezados, h2
+mixin para centrar contenido
+mixin para estilos del form
+*/
+/*
+Mixins: Permite definir y reutilizar bloques de estilos que se pueden incluir en múltiples lugares de la hoja de estilo, similar a funciones en la programación.
+*/
+/*
+Estilos comunes, aplicables a todas las páginas del sitio.
+*/
+header {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container form input {
+  padding: 10px;
+  border: 1px solid #8B008B;
+  width: 100%;
+  margin: 10px;
+}
+.form-container form input:hover {
+  border-color: #6495ED;
+  border-width: 1px;
+}
+.form-container form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-container, .garantias-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6495ED;
+  padding: 20px;
+}
+
+.testimonials-container {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.garantias-container {
+  font-weight: bold;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para los contenedores y diseño propuesto */
+.logo-container {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.logo-container img {
+  height: 100px;
+  width: 150px;
+}
+
+.company-name-container {
+  align-items: center;
+  padding: 10px;
+}
+.company-name-container p {
+  font-weight: bold;
+}
+
+.navigation-container {
+  align-items: center;
+  padding: 10px;
+}
+.navigation-container p {
+  text-align: center;
+  padding: 10px;
+}
+
+.product-container {
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.form-container {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.contact-container, .garantias-container {
+  width: auto;
+  height: 20px;
+}
+
+.testimonials-container p {
+  text-align: center;
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */
