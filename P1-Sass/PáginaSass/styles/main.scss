@@ -16,52 +16,72 @@ Anidar los estilos de los elementos dentro del form, para que se resalten cuando
 
 /* Estilos para los contenedores y diseño propuesto */
 
-.logo-container {
+.logo-container, .company-name-container  {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    margin: 0 30px;
+    width: 40%;
     img {
-        height: 100px;
-        width: 150px;
+        height: 60px;
+        width: 130px;
     }
-}
-
-.company-name-container {
-    align-items: center;
-    padding: 10px;
     p {
         font-weight: bold;
     }
 }
 
+.company-name-container {
+    width: 60%;
+}
+
 .navigation-container {
-    align-items: center;
-    padding: 10px;
+    border-bottom: 1px solid $grey;
+    padding-bottom: 15px;
     p {
+        flex: 1;
         text-align: center;
-        padding: 10px;
+        margin: 0;
     }
 }
 
+.info-container {
+    border-bottom: 1px solid $grey;
+}
+
 .product-container {
-// 3x3 grid
-    padding: 10px;
-    margin-right: 20px;
+    display: flex;
+    border-right: 1px solid $grey;
+    margin: 10px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 100px);
+    border-top: 1px solid $grey;
+    width: 90%;
+    p {
+        text-align: center;
+    }
 }
 
 .form-container {
-    margin-left: 20px;
+    margin: 10px;
     padding: 10px;
 }
 
 .contact-container {
-    width: auto;
+    display: flex;
     height: 20px;
+    margin-top: 20px;
+    width: 100%;
 }
 
-.testimonials-container {
+.testimonials-list {
     p {
+        flex: 1;
         text-align: center;
-        padding: 10px;
+        margin: 0;
     }
 }

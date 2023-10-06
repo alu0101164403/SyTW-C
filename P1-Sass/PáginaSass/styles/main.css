@@ -27,12 +27,26 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(46, 139, 87, 0.25);
+  width: 100%;
+  height: 60px;
 }
 
 body {
+  display: flex;
   font-family: Arial, sans-serif;
-  margin-left: 25px;
-  margin-right: 25px;
+  font-size: 15px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
@@ -40,22 +54,50 @@ h2 {
   font-weight: bold;
 }
 
+footer {
+  height: 100px;
+}
+
 .navigation-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container {
   display: flex;
   align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
 }
 
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 30%;
 }
 .form-container form input {
   padding: 10px;
-  border: 1px solid #8B008B;
+  border: 1px solid #A9A9A9;
+  border-radius: 25px;
   width: 100%;
   margin: 10px;
 }
@@ -64,11 +106,10 @@ h2 {
   border-width: 1px;
 }
 .form-container form label {
-  display: block;
-  margin-bottom: 5px;
+  display: none;
 }
 
-.contact-container, .garantias-container {
+.contact-container, footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,68 +119,94 @@ h2 {
 
 .testimonials-container {
   display: flex;
+  justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-list {
+  justify-content: space-around;
+  margin: 15px 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.garantias-container {
-  font-weight: bold;
-}
-
-.info-container {
-  display: flex;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Estilos para los contenedores y diseño propuesto */
-.logo-container {
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-.logo-container img {
-  height: 100px;
+button {
+  background-color: none;
+  border-radius: 20px;
+  border: 1px solid #A9A9A9;
+  height: 30px;
   width: 150px;
 }
 
-.company-name-container {
+/* Estilos para los contenedores y diseño propuesto */
+.logo-container, .company-name-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
+  margin: 0 30px;
+  width: 40%;
 }
-.company-name-container p {
+.logo-container img, .company-name-container img {
+  height: 60px;
+  width: 130px;
+}
+.logo-container p, .company-name-container p {
   font-weight: bold;
 }
 
+.company-name-container {
+  width: 60%;
+}
+
 .navigation-container {
-  align-items: center;
-  padding: 10px;
+  border-bottom: 1px solid #A9A9A9;
+  padding-bottom: 15px;
 }
 .navigation-container p {
+  flex: 1;
   text-align: center;
-  padding: 10px;
+  margin: 0;
+}
+
+.info-container {
+  border-bottom: 1px solid #A9A9A9;
 }
 
 .product-container {
-  padding: 10px;
-  margin-right: 20px;
+  display: flex;
+  border-right: 1px solid #A9A9A9;
+  margin: 10px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 100px);
+  border-top: 1px solid #A9A9A9;
+  width: 90%;
+}
+.product-list p {
+  text-align: center;
 }
 
 .form-container {
-  margin-left: 20px;
+  margin: 10px;
   padding: 10px;
 }
 
-.contact-container, .garantias-container {
-  width: auto;
+.contact-container, footer {
+  display: flex;
   height: 20px;
+  margin-top: 20px;
+  width: 100%;
 }
 
-.testimonials-container p {
+.testimonials-list p {
+  flex: 1;
   text-align: center;
-  padding: 10px;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */

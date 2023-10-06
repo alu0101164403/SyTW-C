@@ -19,10 +19,16 @@ Mixins: Permite definir y reutilizar bloques de estilos que se pueden incluir en
     align-items: center;
 }
 
+@mixin row-content {
+    display: flex;
+    align-items: center;
+}
+
 @mixin form-styles {
     input {
         padding: 10px;
-        border: 1px solid $purple;
+        border: 1px solid $grey;
+        border-radius: 25px;
         width: 100%;
         margin: 10px;
         &:hover {
@@ -31,12 +37,14 @@ Mixins: Permite definir y reutilizar bloques de estilos que se pueden incluir en
         }
     }
     label {
-        display: block;
-        margin-bottom: 5px;
+        display: none;
     }
 }
 
-@mixin row-content {
-    display: flex;
-    align-items: center;
+@mixin button-styles {
+    background-color: none;
+    border-radius: 20px;
+    border: 1px solid $grey;
+    height: 30px;
+    width: 150px;
 }
