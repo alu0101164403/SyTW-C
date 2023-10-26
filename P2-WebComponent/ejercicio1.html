@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Component Lifecycle</title>
+</head>
+<body>
+  <my-custom-element color="green"></my-custom-element>
+
+  <script>
+    class CustomElement extends HTMLElement {
+        constructor() {
+        super();
+
+        // Callback cuando se crea el elemento
+        console.log('Elemento creado');
+        }
+
+        connectedCallback() {
+        // Callback cuando se adjunta al DOM
+        console.log('Elemento adjuntado al DOM');
+        }
+
+        disconnectedCallback() {
+        // Callback cuando se separa del DOM
+        console.log('Elemento separado del DOM');
+        }
+        /*
+        const element = document.querySelector('my-custom-element');
+        element.remove();
+        */
+        static get observedAttributes() {
+            return ['color'];
+        }
+        
+        attributeChangedCallback(name, oldValue, newValue) {
+        // Callback cuando hay un cambio en los atributos
+        console.log(`Atributo '${name}' cambió de '${oldValue}' a '${newValue}'`);
+        }
+    }
+    
+    customElements.define('my-custom-element', CustomElement);
+  </script>
+</body>
+</html>

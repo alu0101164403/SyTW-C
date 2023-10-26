@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="./styles/main.css">
+    <!--<link rel="import" href="./web.html">-->
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="./img/logoULL.png" alt="logo ull">
+    </div>
+    <div class="company-name-container">
+      <p>Company name</p>
+    </div>
+  </header>
+
+  <main>
+    <nav class="navigation-container">
+      <p>Home</p>
+      <p>Productos</p>
+      <p>Testimonios</p>
+      <p>Contacto</p>
+    </nav>
+    <div class="info-container">
+      <div class="product-container">
+        <h2>Productos</h2>
+        <div class="product-list" id="contenedor-bienes">
+          <bien-patrimonial nombre="Nombre del Bien" antecedentes="Antecedentes del edificio" tipo="Tipo de edificio" imagen="imagen" localizacion="localizacion del bien">
+        </div>
+      </div>
+      <div class="form-container">
+        <form>
+          <input 
+            type="text" 
+            id="nombre" 
+            name="nombre"
+            placeholder="Nombre"
+            required
+          >
+          <input 
+            type="text" 
+            id="email" 
+            name="nombre" 
+            placeholder="E-mail"
+            required
+          >
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Contraseña"
+            required
+          >
+          <button type="submit">Limpiar</button>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="contact-container">
+          <p>pongase en contacto</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-container">
+      <h2>Testimonios</h2>
+      <div class="testimonials-list">
+        <p>testimonios</p>
+        <p>testimonios</p>
+        <p>testimonios</p>
+        <p>testimonios</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <h2>Garantías</h2>
+  </footer>
+
+  <!--  PLANTILLA TARJETA BIEN PATRIMONIAL  -->
+  <template id="template-bienPatimonial">
+    <style>
+      p {
+        text-align: center;
+        font-weight: normal;
+        }
+    </style>
+    <div>
+      <h2 id="nombre"></h2>
+      <p>Antecedentes: <span id="antecedentes"></span></p>
+      <p>Tipo de edificio: <span id="tipo"></span></p>
+      <img src="" alt="Imagen del bien patrimonial" id="imagen">
+      <p>Ubicación: <span id="localizacion"></span></p>
+    </div>
+  </template>
+  <!----------------------------------------->
+
+  <script src="./bien-patrimonial.js"></script>
+</body>
+</html>

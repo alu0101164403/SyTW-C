@@ -1,0 +1,87 @@
+{"bienes": [
+    {
+        "nombre": "CASA ALVARADO BRACAMONTE",
+        "antecedentes": "El Capitán General de Tenerife don Diego de Alvarado Bracamonte edificó esta casa entre 1624 y 1631",
+        "tipo": {
+            "arquitectura": "CIVIL Y DOMÉSICA",
+            "época":"Anterior al s. XX"
+        },
+        "img": "http://gestorpatrimoniocultural.cicop.com/imgFicha/17_1_2021_0_49_40.png",
+        "localizacion":{
+            "lat": "28°29'21.2 N",
+            "long": "16°18'51.5 W"
+            }
+        
+       },
+       {
+        "nombre": "CASA ALVAREZ DE ABREU",
+        "antecedentes": "La vivienda tiene un balcón y da esquina al callejón que conduce al sitio denominado “Juego de los Bolos”, perteneció a D.Santiago Álvarez de Abreu, veedor general de la gente de guerra",
+        "tipo": {
+            "arquitectura": "CIVIL Y DOMÉSICA",
+            "época":"Anterior al s. XX"
+        },
+        "img": "http://gestorpatrimoniocultural.cicop.com/imgFicha/19_1_2021_22_55_28.png",
+        "localizacion":{
+            "lat": "28°29'26.6 N",
+            "long": "16°19'12.7 W"
+            }
+        
+       },
+       {
+        "nombre": "CASA ALONSO BRITO",
+        "antecedentes": "La Casa Alonso Brito es una de las más antiguas, de finales del siglo XVII, con una sencilla fachada en la calle San Agustín y un pequeño balcón muy rudimentario en la calle Viana",
+        "tipo": {
+            "arquitectura": "CIVIL Y DOMÉSICA",
+            "época":"Anterior al s. XX"
+        },
+        "img": "http://gestorpatrimoniocultural.cicop.com/imgFicha/17_1_2021_0_49_40.png",
+        "localizacion":{
+            "lat": "28°29'21.2 N",
+            "long": "16°18'51.5 W"
+            }
+        
+       },
+       {
+        "nombre": "IGLESIA DE LA CONCEPCIÓN DE LA LAGUNA",
+        "antecedentes": "Es una vasta construcción que ha sido objeto de intensas modificaciones, ya que a lo largo de tres centurias se le ha añadido o sustraido diversos cuerpos, e incluso en los años setenta del siglo XX, al desplomarse parte de sus cubiertas, sufrió una profunda remodelación que le ha mermado al conjunto su original aspecto volumétrico.",
+        "tipo": {
+            "arquitectura": "RELIGIOSA",
+            "categoría":"Iglesias"
+        },
+        "img": "http://gestorpatrimoniocultural.cicop.com/imgFicha/24_8_2017_20_45_24.jpg",
+        "localizacion":{
+            "lat": "28°29'25.6 N",
+            "long": "16°19'13.1 W"
+            }
+       },
+       {
+        "nombre": "FUENTE DE LA PLAZA DEL ADELANTADO",
+        "antecedentes": "La fuente de la Plaza del Adelantado de San Cristóbal de La Laguna, instalada en 1870 fue adquirida por Tomás de Nava -Grimón y Pérez de Barradas, VII Marqués de Villanueva del Prado por 18.797 francos, y sustituyó a otra anterior de canteria local. La fuente de marmol fue encargada a Marsella en 1868 y llegó a la isla a través de la naviera Ghirnalda Hermanos, aunque posiblemente su procedencia era italiana, es junto a la fuente de la plaza de Weyler de Santa Cruz de Tenerife, instalada en 1899, una de las fuentes en marmol de grandes dimensiones mas significativas dentro del Patrimonio Cultural de la isla de Tenerife.",
+        "tipo": {
+            "arquitectura": "BIENES INMUEBLES",
+            "categoría":"Escultura"
+        },
+        "img": "http://gestorpatrimoniocultural.cicop.com/imgFicha/PlazaAdelantado066.jpg",
+        "localizacion":{
+            "lat": "28°29'15.0 N",
+            "long": "16°18'48.3 W"
+            }
+        
+       },
+       {
+        "nombre": "UNIVERSIDAD DE LA LAGUNA",
+        "antecedentes": "La Universidad de La Laguna tiene sus orígenes en el sete­cientos, se ha cumplido recientemente el segundo centenario de su primera fundación en 1792, después instituyóse de nuevo en el siglo XIX. Tras ello, un real decreto de 11 de abril de 1913 permitió la instauración del primer curso de la Facultad de Filosofía y Letras así como el preparatorio de Derecho. Pero fue un real decreto otorgado el 21 de septiembre de 1927, creando el 120 distrito uni­versitario, el que la consolidó ya en su definitiva configuración. Los estudios a impartir en principio fueron los correspondientes a las facultades de Derecho y Ciencias Químicas, más las asignaturas del primer curso de Filosofía y Letras; asimismo se aceptó la formación de un colegio politécnico, para dar títulos de perito agrónomo y capataz.",
+        "tipo": {
+            "arquitectura": "CIVIL Y DOMÉSICA",
+            "epoca":"S.XX y Posterior"
+        },
+        "img": "http://gestorpatrimoniocultural.cicop.com/imgFicha/PlazaAdelantado066.jpg",
+        "localizacion":{
+            "lat": "28°28'54.7 N",
+            "long": "16°19'00.8 W"
+            }
+        
+       }
+
+]
+}

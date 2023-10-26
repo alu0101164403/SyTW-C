@@ -1,0 +1,87 @@
+/*
+Modularizar el códig SASS utilizando al menos los parciales:
+_variables.scss
+_mixins.scss: 
+_base.scss: Estilos comunes, aplicables a todas las páginas del sitio.
+mixins para los encabezados, h2
+mixin para centrar contenido
+mixin para estilos del form
+Definir un estilo para el contacto  y usar herencia para las Garantías
+Anidar los estilos de los elementos dentro del form, para que se resalten cuando tengan el foco.
+*/
+
+@import 'variables';
+@import 'mixins';
+@import 'base';
+
+/* Estilos para los contenedores y diseño propuesto */
+
+.logo-container, .company-name-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    width: 40%;
+    img {
+        height: 60px;
+        width: 130px;
+    }
+    p {
+        font-weight: bold;
+    }
+}
+
+.company-name-container {
+    width: 60%;
+}
+
+.navigation-container {
+    border-bottom: 1px solid $grey;
+    padding-bottom: 15px;
+    p {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.info-container {
+    border-bottom: 1px solid $grey;
+}
+
+.product-container {
+    display: flex;
+    border-right: 1px solid $grey;
+    margin: 10px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 100px);
+    border-top: 1px solid $grey;
+    width: 90%;
+    p {
+        text-align: center;
+    }
+}
+
+.form-container {
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact-container {
+    display: flex;
+    height: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.testimonials-list {
+    p {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+    }
+}
